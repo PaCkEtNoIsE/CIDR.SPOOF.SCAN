@@ -6,7 +6,7 @@
 REQUIREMENTS FOR THIS TO WORK PROPERLY:
 IPHM Enabled Server - Server without BCP38 turned on.
 
-Without this you will reveal your real server IP!
+Without this your server will send your server IP and not spoofed IP!
 ```
 
 # 🚧 BUILD
