@@ -25,7 +25,7 @@ If you want to scan multiple ports edit file main.go at line 34: ports = []int{2
 Scan one IP:
 ./cidr.spoof.scan -r 1.2.3.4/32
 
-Scan 256 IPs
+Scan 256 IPs:
 ./cidr.spoof.scan -r 11.22.33.0/24
 ```
 
