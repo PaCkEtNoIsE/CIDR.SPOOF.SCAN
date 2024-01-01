@@ -17,10 +17,10 @@ import (
 
 var (
         // flags
-        cidr     = flag.String("r", "", "CIDR - Target")
+        cidr     = flag.String("r", "", "CIDR (target)")
         duration = flag.Int("t", -1, "Duration (seconds)")
         workers  = flag.Int("c", 10, "Threads")
-        delay    = flag.Int("u", 0, "μs (microseconds) delay")
+        delay    = flag.Int("u", 0, "Microseconds (μs) delay")
 
         // colors
         colorReset  = "\033[0m"
@@ -246,10 +246,10 @@ func banner() {
 
 func usage() {
         fmt.Fprintf(os.Stderr, `CIDR.SPOOF.SCAN:
-    (%s-r%s) - cidr range [%s0.0.0.0/0%s]
-    (%s-c%s) - concurrent threads [%s100%s]
-    (%s-t%s) - duration [%s-1%s]
-    (%s-u%s) - usec delay between sends [%s0%s]
+    (%s-r%s) - CIDR (target) [%s0.0.0.0/0%s]
+    (%s-c%s) - Threads [%s100%s]
+    (%s-t%s) - Duration (seconds) [%s-1%s]
+    (%s-u%s) - Microseconds (μs) delay [%s0%s]
 `, colorCyan, colorReset, colorPurple, colorReset, colorCyan, colorReset, colorPurple, colorReset, colorCyan, colorReset, colorPurple, colorReset, colorCyan, colorReset, colorPurple, colorReset)
 }
 
