@@ -6,7 +6,7 @@
 
 # 🟢 SCANNED PORTS
 ```
-By default if will scan only port 10101.
+By default it will scan only port 10101.
 If you want to change the port edit file main.go at line 34: ports = []int{10101}
 
 If you want to scan multiple ports edit file main.go at line 34: ports = []int{21,22,23}
