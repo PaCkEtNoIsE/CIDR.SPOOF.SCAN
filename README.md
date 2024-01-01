@@ -1,10 +1,18 @@
 # CIDR.SPOOF.SCAN
 👽 Unleashes a storm of legitimate looking traffic in order to congest, invalidate, and annoy threat intelligence sensors such as GreyNoise and SpamHaus.
 
-# BUILD
+# 🚧 BUILD
 ```go build```
 
-# USAGE
+# 🟢 SCANNED PORTS
+```
+By default if will scan only port 10101.
+If you want to change the port edit file main.go at line 34: ports = []int{10101}
+
+If you want to scan multiple ports edit file main.go at line 34: ports = []int{21,22,23}
+```
+
+# 💡 USAGE
 ```
 Scan one IP:
 ./cidr.spoof.scan -r 1.2.3.4/32
@@ -13,7 +21,7 @@ Scan 256 IPs
 ./cidr.spoof.scan -r 11.22.33.0/24
 ```
 
-# HELP
+# ❓ HELP
 ```
 ./cidr.spoof.scan -h
 CIDR.SPOOF.SCAN:
