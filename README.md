@@ -6,9 +6,19 @@
 
 # USAGE
 ```
+Scan one IP:
+./cidr.spoof.scan -r 1.2.3.4/32
+
+Scan 256 IPs
+./cidr.spoof.scan -r 11.22.33.0/24
+```
+
+# HELP
+```
+./cidr.spoof.scan -h
 CIDR.SPOOF.SCAN:
-    (-r) - cidr range [0.0.0.0/0]
-    (-c) - concurrent threads [100]
-    (-t) - duration [-1]
-    (-u) - usec delay between sends [0]
+    (-r) - CIDR (target) [0.0.0.0/0]
+    (-c) - Threads [100]
+    (-t) - Duration (seconds) [-1]
+    (-u) - Microseconds (μs) delay [0]
 ```
