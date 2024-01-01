@@ -1,6 +1,14 @@
 # CIDR.SPOOF.SCAN
 👽 Unleashes a storm of legitimate looking traffic in order to congest, invalidate, and annoy threat intelligence sensors such as GreyNoise and SpamHaus.
 
+# ☢️ WARNING!
+```
+REQUIREMENTS FOR THIS TO WORK PROPERLY:
+IPHM Enabled Server - Server without BCP38 turned on.
+
+Without this you will reveal your real server IP!
+```
+
 # 🚧 BUILD
 ```go build```
 
